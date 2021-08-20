@@ -1,0 +1,23 @@
+{
+  "name": "microservices-demo",
+  "version": "1.0.0",
+  "description": "Three simple services:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yzhong52/microservices-demo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yzhong52/microservices-demo/issues"
+  },
+  "homepage": "https://github.com/yzhong52/microservices-demo#readme",
+  "dependencies": {
+    "mongo": "^0.1.0",
+    "mongodb": "^3.3.0-beta2"
+  }
+}

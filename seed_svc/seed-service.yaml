@@ -1,0 +1,13 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: seed-service
+spec:
+  type: NodePort
+  selector:
+    app: seed-app
+  ports:
+  - name: seed-service
+    protocol: TCP
+    port: 80
+    targetPort: 8080

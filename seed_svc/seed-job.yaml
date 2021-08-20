@@ -1,0 +1,17 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: seed-job
+spec:
+  template:
+    metadata:
+      labels:
+        app: seed-app
+    spec:
+      containers:
+      - name: seed-container
+        image: yashmehta/sample_repo:mongodb
+        ports:
+        - containerPort: 8080
+      restartPolicy: Never
+  backoffLimit: 3
